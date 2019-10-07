@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-ships',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShipsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
+    this.apiService.fetchData();
+
   }
 
 }
