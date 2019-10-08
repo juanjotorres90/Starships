@@ -10,6 +10,7 @@ export class AppComponent implements OnInit{
   title = 'starships';
 
   ngOnInit() {
+    // tslint:disable-next-line: only-arrow-functions
     $(function() {
       $('[data-toggle="popover"]').popover();
     });
