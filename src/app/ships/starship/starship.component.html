@@ -1,0 +1,18 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Length</th>
+        <th scope="col">Crew</th>
+        <th scope="col">Passengers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="shipData">
+        <th scope="row">{{ shipData.name }}</th>
+        <td>{{ shipData.length }}</td>
+        <td>{{ shipData.crew }}</td>
+        <td>{{ shipData.passengers }}</td>
+      </tr>
+    </tbody>
+  </table>

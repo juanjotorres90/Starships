@@ -1,1 +1,24 @@
-<p>ships works!</p>
+
+<div class="row">
+  <div class="col-sm-12">
+      <ul class="list-group">
+        <h1 *ngIf="ships.length === 0" class="text-center">Loading Starships...</h1>
+<app-starship-list
+*ngFor="let ship of ships; let i = index"
+[ship]="ship"
+[index]="i"
+class="list-group-item list-group-item-action"
+style="cursor:pointer;"
+(click)="selectedShip(ship)"
+routerLink="/details"
+routerLinkActive="router-link-active"></app-starship-list>
+</ul>
+<button
+type="button"
+class="btn btn-secondary mt-5"
+(click)="nextPage()"
+>Más datos</button>
+
+</div>
+
+</div>

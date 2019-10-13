@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ShipsComponent } from './ships/ships.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StarshipListComponent } from './ships/starship-list/starship-list.component';
+import { StarshipComponent } from './ships/starship/starship.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ShipsComponent
+    ShipsComponent,
+    StarshipListComponent,
+    StarshipComponent
   ],
   imports: [
     BrowserModule,
