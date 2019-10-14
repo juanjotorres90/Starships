@@ -9,11 +9,10 @@ import { ApiService } from '../services/api.service';
 export class ShipsComponent implements OnInit {
   ships: Array<any>;
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService) {}
 
   ngOnInit() {
     this.ships = this.apiService.shipsFetch;
-
   }
 
   nextPage() {
@@ -21,8 +20,6 @@ export class ShipsComponent implements OnInit {
   }
 
   selectedShip(ship) {
-    // console.log(ship);
     this.apiService.shipInfo(ship.name);
   }
-
 }

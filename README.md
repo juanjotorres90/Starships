@@ -1,5 +1,7 @@
 ## - Starships (Indi...)
 
+Check out the <a href="https://juanjotorres.net/projects/starships" target="_blank">Demo</a>.
+
 ### Instalación
  * <pre><code> npm install </code></pre>
 

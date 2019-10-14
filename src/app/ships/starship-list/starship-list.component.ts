@@ -6,13 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./starship-list.component.scss']
 })
 export class StarshipListComponent implements OnInit {
-
   @Input() ship;
   @Input() index;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
